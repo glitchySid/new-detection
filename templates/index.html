@@ -1,0 +1,36 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Document</title> 
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styles.css') }}">
+</head> 
+<body> 
+    <header>
+        <nav>
+            <h2 class="logo">
+                Fake News Detector
+            </h2>
+        </nav>
+    </header>
+    <main>
+        <div class="d-flex">
+            <div>
+                <form method="POST"> 
+                    <textarea name="textarea" placeholder="Enter News Heading..."></textarea> 
+                    <input type="submit" value="Submit" class="btn"> 
+                </form> 
+                <p class="output-message">{{content}}</p>
+               </div>
+                <img src="https://contenthub-static.grammarly.com/blog/wp-content/uploads/2022/08/BMD-3398.png"
+                alt="content-image">
+        </div>
+    </main>
+    <footer>
+        copyright@ Fake News Detector
+    </footer>
+
+</body> 
+</html>
